@@ -1,0 +1,15 @@
+{
+  "slug": "firstaidelectric",
+  "name": "First Aid Electric",
+  "tagline": "On Call 24 Hours — Calgary's Electrical First Responders",
+  "phone": "(403) 250-9301",
+  "niche": "Residential & Commercial Electrician",
+  "location": "Calgary, AB",
+  "primary": "#CC0000",
+  "secondary": "#FFFFFF",
+  "accent": "#1A1A1A",
+  "gradient": "linear-gradient(135deg, #8B0000 0%, #CC0000 50%, #FF3333 100%)",
+  "trustSignal": "Master Electricians | 30 Years Experience | 5-Star Rated",
+  "stat": "30+ Years Serving Calgary",
+  "yearFounded": ""
+}
