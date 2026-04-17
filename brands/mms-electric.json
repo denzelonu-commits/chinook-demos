@@ -1,0 +1,15 @@
+{
+  "slug":        "mms-electric",
+  "name":        "MMS Electric",
+  "tagline":     "Licensed & Certified. Fixed Price. No Surprises.",
+  "phone":       "(587) 890-2680",
+  "niche":       "Master Electrician",
+  "location":    "Calgary, AB",
+  "primary":     "#0A1F44",
+  "secondary":   "#7A9CC4",
+  "accent":      "#F5A623",
+  "gradient":    "linear-gradient(135deg, #060F24 0%, #0A1F44 50%, #1A4080 100%)",
+  "trustSignal": "Alberta Safety Codes Certified",
+  "stat":        "500+",
+  "yearFounded": "2004"
+}
