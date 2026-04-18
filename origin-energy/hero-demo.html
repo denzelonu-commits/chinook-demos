@@ -501,17 +501,34 @@ function GrowthEngineHero() {
   );
 }
 
+function CtaSection() {
+  return (
+    <div style={{ padding: '72px 24px', textAlign: 'center', background: '#f8fafc', borderTop: '1px solid #e2e8f0' }}>
+      <a
+        href="https://calendly.com/denzelo-onuoha/30min"
+        style={{
+          display: 'inline-flex', alignItems: 'center', gap: '8px',
+          background: '#059669', color: '#fff',
+          padding: '16px 36px', borderRadius: '12px',
+          fontFamily: "'Space Grotesk', system-ui, sans-serif", fontSize: '16px', fontWeight: 700,
+          textDecoration: 'none', letterSpacing: '0.01em',
+          transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+        }}
+        onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 32px rgba(5,150,105,0.35)'; }}
+        onMouseLeave={e => { e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow=''; }}
+      >
+        Like what you see? Book a free call →
+      </a>
+    </div>
+  );
+}
+
 function App() {
   return (
     <div>
-      <div className="tier-bar">
-        <strong>Foundation</strong> — $2,500 &nbsp;·&nbsp; Shadcn-style UI · Fade-in-up animations · Two-column contact card
-      </div>
       <FoundationHero />
-      <div className="tier-bar">
-        <strong>Growth Engine</strong> — $4,800 &nbsp;·&nbsp; CSS gradient hero · Word-reveal headline · Floating frosted-glass stat cards
-      </div>
       <GrowthEngineHero />
+      <CtaSection />
     </div>
   );
 }

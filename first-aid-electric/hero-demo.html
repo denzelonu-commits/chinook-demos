@@ -116,11 +116,6 @@
       return (
         <section className="bg-white" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
 
-          {/* Tier label */}
-          <div style={{ background: '#111827', color: 'white', textAlign: 'center', padding: '12px 0', fontSize: '11px', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase' }}>
-            Foundation — $2,500
-          </div>
-
           {/* Nav bar */}
           <div style={{ borderBottom: '1px solid #F3F4F6', padding: '0 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -264,11 +259,6 @@
           {/* Bottom amber accent line */}
           <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '2px', backgroundImage: 'linear-gradient(90deg, transparent 0%, #CC0000 30%, #FF4444 50%, #CC0000 70%, transparent 100%)', zIndex: 20 }}></div>
 
-          {/* Tier label */}
-          <div style={{ position: 'relative', zIndex: 30, textAlign: 'center', padding: '12px 0', background: 'rgba(0,0,0,0.35)', borderBottom: '1px solid rgba(255,255,255,0.08)', fontSize: '11px', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.7)' }}>
-            Growth Engine — $4,800
-          </div>
-
           {/* Nav */}
           <div style={{ position: 'relative', zIndex: 30, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 3rem', height: '68px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -382,11 +372,34 @@
     /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
        APP
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    function CtaSection() {
+      return (
+        <div style={{ padding: '72px 24px', textAlign: 'center', background: '#fff', borderTop: '1px solid #E5E7EB' }}>
+          <a
+            href="https://calendly.com/denzelo-onuoha/30min"
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: '8px',
+              background: '#CC0000', color: '#fff',
+              padding: '16px 36px', borderRadius: '12px',
+              fontFamily: 'Inter, sans-serif', fontSize: '16px', fontWeight: 700,
+              textDecoration: 'none', letterSpacing: '-0.01em',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 32px rgba(204,0,0,0.35)'; }}
+            onMouseLeave={e => { e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow=''; }}
+          >
+            Like what you see? Book a free call →
+          </a>
+        </div>
+      );
+    }
+
     function App() {
       return (
         <div>
           <FoundationHero />
           <GrowthEngineHero />
+          <CtaSection />
         </div>
       );
     }

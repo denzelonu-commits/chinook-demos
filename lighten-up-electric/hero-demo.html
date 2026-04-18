@@ -174,11 +174,6 @@
   function FoundationHero() {
     return (
       <div style={{ background: '#F8FAFC', borderBottom: '1px solid #E2E8F0' }}>
-        {/* Tier label */}
-        <div className="tier-label-wrap" style={{ background: '#fff', borderBottom: '1px solid #E2E8F0', padding: '12px 0' }}>
-          <span className="tier-label-foundation">Foundation — $2,500</span>
-        </div>
-
         {/* Nav bar */}
         <nav style={{ background: '#fff', borderBottom: '1px solid #E2E8F0', padding: '0 32px' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -329,11 +324,6 @@
 
     return (
       <div>
-        {/* Tier label */}
-        <div className="tier-label-wrap" style={{ background: '#030712', borderBottom: '1px solid rgba(255,255,255,0.06)', padding: '12px 0' }}>
-          <span className="tier-label-growth">Growth Engine — $4,800</span>
-        </div>
-
         {/* GRADIENT SECTION */}
         <div style={{
           minHeight: '100vh',
@@ -480,11 +470,34 @@
   /* ──────────────────────────────
      ROOT APP
   ────────────────────────────── */
+  function CtaSection() {
+    return (
+      <div style={{ padding: '72px 24px', textAlign: 'center', background: '#F8FAFC', borderTop: '1px solid #E2E8F0' }}>
+        <a
+          href="https://calendly.com/denzelo-onuoha/30min"
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '8px',
+            background: '#2563EB', color: '#fff',
+            padding: '16px 36px', borderRadius: '12px',
+            fontFamily: 'Inter, sans-serif', fontSize: '16px', fontWeight: 700,
+            textDecoration: 'none', letterSpacing: '-0.01em',
+            transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 32px rgba(37,99,235,0.35)'; }}
+          onMouseLeave={e => { e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow=''; }}
+        >
+          Like what you see? Book a free call →
+        </a>
+      </div>
+    );
+  }
+
   function App() {
     return (
       <div>
         <FoundationHero />
         <GrowthEngineHero />
+        <CtaSection />
       </div>
     );
   }
